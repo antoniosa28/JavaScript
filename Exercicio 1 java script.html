@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title> Exercício 1 </title></head>
+<body>
+
+<div id="divTexto" onClick="colorir()"> <h1> Está aqui o título </h1> </div>
+
+<div onmouseenter="menter(this)" onmouseleave="mleave(this)" onmousedown="mdown(this)"> <p> Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo
+Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo" </p> </div>
+
+
+
+<script>
+
+	function menter(obj) {
+        obj.innerHTML = "Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo".bold();
+       
+    }
+
+    function mleave(obj) {
+        obj.innerHTML = "Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo Essse é o parágrafo";
+       
+    }
+
+	function colorir() {
+        var elementoDiv = document.getElementById("divTexto");
+        elementoDiv.style.backgroundColor = 'blue';
+        elementoDiv.style.color = 'white';
+	}
+	
+	function mdown(obj){
+		obj.innerHTML = "Obrigado pelo click!"
+	
+	
+	}
+
+</script>
+
+</body>
+</html>

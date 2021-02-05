@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function calculaDiscriminante(a,b,c){
+            return (b*b) - (4*a*c);
+        }
+
+        function testeDiscriminante(){
+            var a = prompt("Entre com o valor de a:");        
+            var b = prompt("Entre com o valor de b:");  
+            var c = prompt("Entre com o valor de c:");    
+            document.write(calculaDiscriminante(a,b,c));
+        }
+    </script>
+
+
+</head>
+<body>
+    <button onclick=testeDiscriminante()>Calcular Discriminante</button>
+</body>
+</html>
+
+
